@@ -1,22 +1,19 @@
 ﻿namespace FactoryPatternExercise;
 
-class Program
+public class Program
 {
     static void Main(string[] args)
     {
         Console.WriteLine("What type of vehicle do you want to make? Car or Motorcycle???");
         string userInput = Console.ReadLine();
+        
+        VehicleFactory factory = new VehicleFactory();
+        IVehicle myVehicle = factory.CreateVehicle(userInput);
 
-        switch (userInput.ToLower())
-        {
-            case "car":
-                Car myCar = new Car(); 
-                break;
-            case "Motorcycle":
-                Motorcycle myMotorcycle = new Motorcycle();
-                break;
-            default:
-                break;
-        }
+        myVehicle.Drive();
+        
+        Console.WriteLine("Let's make another vehicle.");
+        userInput = Console.ReadLine();
+        
     }
 }

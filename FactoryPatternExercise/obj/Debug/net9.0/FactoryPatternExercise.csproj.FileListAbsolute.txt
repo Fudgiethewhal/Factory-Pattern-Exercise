@@ -12,3 +12,4 @@ C:\Users\15756\repos\FactoryPatternExercise\FactoryPatternExercise\obj\Debug\net
 C:\Users\15756\repos\FactoryPatternExercise\FactoryPatternExercise\obj\Debug\net9.0\FactoryPatternExercise.pdb
 C:\Users\15756\repos\FactoryPatternExercise\FactoryPatternExercise\obj\Debug\net9.0\FactoryPatternExercise.genruntimeconfig.cache
 C:\Users\15756\repos\FactoryPatternExercise\FactoryPatternExercise\obj\Debug\net9.0\ref\FactoryPatternExercise.dll
+C:\Users\15756\repos\FactoryPatternExercise\FactoryPatternExercise\obj\Debug\net9.0\FactoryPatternExercise.sourcelink.json
