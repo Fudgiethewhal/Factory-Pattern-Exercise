@@ -1,6 +1,6 @@
 ﻿namespace FactoryPatternExercise;
 
-interface IVehicle
+public interface IVehicle
 {
     void Drive();
 }

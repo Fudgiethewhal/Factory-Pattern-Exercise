@@ -2,11 +2,8 @@
 
 public class Motorcycle: IVehicle
 {
-    public string Color { get; set; }
-    public bool HasHandBrake { get; set; }
-
-    public void Drive()
+   public void Drive()
     {
-        Console.WriteLine("Driving a motorcycle.");
+        Console.WriteLine("Building a new motorcycle.");
     }
 }

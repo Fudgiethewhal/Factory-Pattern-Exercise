@@ -2,19 +2,19 @@
 
 namespace FactoryPatternExercise;
 
-class VehicleFactory
+public static class VehicleFactory
 {
-   public IVehicle CreateVehicle(string userInput)
-   {
-      switch (userInput.ToLower())
-      {
-         case "car":
-            return new Car() { Color = "Blue", IsDriveable = true };
-         case "Motorcycle":
-           return new Motorcycle(); 
-         default:
-            return new Car();
-         
-      }
-   }
+    public static IVehicle? GetVehicle(int numberOfTires)
+    {
+        switch (numberOfTires)
+        {
+            case 2:
+                return new Motorcycle();
+            case 4:
+                return new Car();
+            default:
+                Console.WriteLine("Invalid number of Tires, no matching vehicle.");
+                return new Car();
+        }
+    }
 }
